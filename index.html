@@ -5,15 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Navbar</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    .dropdown-info {
-
-      display: none;
-    }
-    .dropdown-parent:hover .dropdown-info {
-      display: block;
-    }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
 </head>
 <body class="bg-white">
 
@@ -21,7 +14,7 @@
   <div class="relative shadow-2xl">
     <!-- Upper menu -->
     <div class="border-b-[1.5px] border-[#d4d4d4]">
-      <div class="flex justify-between items-center xl:h-[63px] lg:h-[62.5px] sm:w-[540px] md:w-[720px] lg:w-[966px] xl:w-[1140px] 2xl:w-[1360px] mx-auto pr-0 md:pr-[6px] lg:pr-[0px] lg:pl-[8.5px] xl:pr-0">
+      <div class="flex justify-between items-center xl:h-[63px] lg:h-[62.5px] sm:w-[540px] md:w-[720px] lg:w-[966px] xl:w-[1360px] 2xl:w-[1360px] mx-auto">
         <!-- Logo -->
         <div class="flex items-center">
           <a href="#">
@@ -39,26 +32,51 @@
                 class="placeholder:font-cormorant placeholder:font-semibold border-none outline-0 ring-0 w-full xl:pb-[1px] lg:pb-[3px]"
               />
               <button>
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 10-14 0 7 7 0 0014 0z"></path></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search" style="width: 18px;">
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>              
               </button>
             </div>
           </div>
           <button class="pl-4">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 18.364A4 4 0 014 15V9a7 7 0 017-7h2a7 7 0 017 7v6a4 4 0 01-.879 2.364M15 21H9m0 0a3 3 0 01-6 0m18 0a3 3 0 01-6 0"></path></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user" style="width: 18px;">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+              <circle cx="12" cy="7" r="4"></circle>
+          </svg>          
           </button>
           <button class="flex !pl-4">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16s1.5 2 8 2 8-2 8-2M9 18l2 2 4-4m-6 0h6"></path></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart" style="width: 18px;">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+          </svg>          
             <div class="w-[16px] h-[16px] text-[10px] text-white bg-[#543310] flex justify-center items-center -mt-1 -ml-2 rounded-full">
               <p>0</p>
             </div>
           </button>
           <button class="flex !pl-4 dropdown-parent relative">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h18M6 3l2 12m0 0h8m-8 0a2 2 0 104 0m4 0a2 2 0 104 0M5 21h14"></path></svg>
+            <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="2"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    class="feather feather-shopping-cart"
+    style="width: 18px;"
+>
+    <circle cx="9" cy="21" r="1"></circle>
+    <circle cx="20" cy="21" r="1"></circle>
+    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+</svg>
+
             <div class="w-[16px] h-[16px] text-[10px] text-white bg-[#543310] flex justify-center items-center -mt-1 -ml-2 rounded-full">
               <p>0</p>
             </div>
             <!-- Cart Dropdown -->
-            <div class="absolute top-6 dropdown-info right-1 shadow-md bg-white w-[580px] h-[300px] p-10 transition-colors duration-500 border-[0.5px] border-[#d4d4d4]">
+            <div class="absolute top-6 dropdown-info z-10 right-1 shadow-md bg-white w-[580px] h-[300px] p-10 transition-colors duration-500 border-[0.5px] border-[#d4d4d4]">
               <div class="flex justify-between items-center text-[#543310] border-b border-[#d4d4d4] pb-7">
                 <h2 class="text-3xl font-cormorant font-bold">Your Cart</h2>
                 <p class="text-3xl font-bold">(0)</p>
@@ -73,16 +91,46 @@
     <!-- Lower menu -->
     <div class="flex justify-center items-center gap-[53px] h-[61px] bg-white">
       <!-- Dropdown menus -->
-      <div class="dropdown-parent relative h-full mt-[33px] cursor-pointer">
+      <div class="dropdown-parent relative h-full mt-[33px] cursor-pointer cormorant-fourH">
         <nav class="flex justify-center items-center gap-2">
           <li class="font-cormorant text-xl font-semibold list-none">Face</li>
           <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
         </nav>
-        <div class="dropdown-info w-[272px] bg-white absolute top-[46px] left-0 shadow-md">
+        <div class="dropdown-info z-10 w-[272px] bg-white absolute top-[46px] left-0 shadow-md">
           <h2 class="text-[#543310] text-lg font-cormorant py-3 pl-5 hover:text-white hover:bg-[#543310] font-semibold border-b-[1.5px] border-[#543310]">Cleanser</h2>
           <!-- Add more dropdown items as needed -->
         </div>
-      </div>
+        </div>
+        <div class="dropdown-parent relative h-full mt-[33px] cursor-pointer cormorant-fourH">
+          <nav class="flex justify-center items-center gap-2">
+            <li class="font-cormorant text-xl font-semibold list-none">Eyes</li>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+          </nav>
+          <div class="dropdown-info z-10 w-[272px] bg-white absolute top-[46px] left-0 shadow-md">
+            <h2 class="text-[#543310] text-lg font-cormorant py-3 pl-5 hover:text-white hover:bg-[#543310] font-semibold border-b-[1.5px] border-[#543310]">Cleanser</h2>
+            <!-- Add more dropdown items as needed -->
+          </div>
+          </div>
+          <div class="dropdown-parent relative h-full mt-[33px] cursor-pointer cormorant-fourH">
+            <nav class="flex justify-center items-center gap-2">
+              <li class="font-cormorant text-xl font-semibold list-none">Hair</li>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            </nav>
+            <div class="dropdown-info z-10 w-[272px] bg-white absolute top-[46px] left-0 shadow-md">
+              <h2 class="text-[#543310] text-lg font-cormorant py-3 pl-5 hover:text-white hover:bg-[#543310] font-semibold border-b-[1.5px] border-[#543310]">Cleanser</h2>
+              <!-- Add more dropdown items as needed -->
+            </div>
+            </div>
+            <div class="dropdown-parent relative h-full mt-[33px] cursor-pointer cormorant-fourH">
+              <nav class="flex justify-center items-center gap-2">
+                <li class="font-cormorant text-xl font-semibold list-none">Body care</li>
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+              </nav>
+              <div class="dropdown-info z-10 w-[272px] bg-white absolute top-[46px] left-0 shadow-md">
+                <h2 class="text-[#543310] text-lg font-cormorant py-3 pl-5 hover:text-white hover:bg-[#543310] font-semibold border-b-[1.5px] border-[#543310]">Cleanser</h2>
+                <!-- Add more dropdown items as needed -->
+              </div>
+              </div>
       <!-- Repeat dropdown structure for "Eyes", "Hair", and "Body Care" -->
     </div>
   </div>
