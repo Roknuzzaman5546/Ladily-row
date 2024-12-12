@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,21 +8,23 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     .dropdown-info {
-
       display: none;
     }
+
     .dropdown-parent:hover .dropdown-info {
       display: block;
     }
   </style>
 </head>
+
 <body class="bg-white">
 
   <!-- Navbar -->
   <div class="relative shadow-2xl">
     <!-- Upper menu -->
     <div class="border-b-[1.5px] border-[#d4d4d4]">
-      <div class="flex justify-between items-center xl:h-[63px] lg:h-[62.5px] sm:w-[540px] md:w-[720px] lg:w-[966px] xl:w-[1140px] 2xl:w-[1360px] mx-auto pr-0 md:pr-[6px] lg:pr-[0px] lg:pl-[8.5px] xl:pr-0">
+      <div
+        class="flex justify-between items-center xl:h-[63px] lg:h-[62.5px] sm:w-[540px] md:w-[720px] lg:w-[966px] xl:w-[1140px] 2xl:w-[1360px] mx-auto pr-0 md:pr-[6px] lg:pr-[0px] lg:pl-[8.5px] xl:pr-0">
         <!-- Logo -->
         <div class="flex items-center">
           <a href="#">
@@ -33,32 +36,49 @@
         <div class="flex items-end -mt-[2px]">
           <div class="w-full md:w-[298px] pb-[1px]">
             <div class="flex justify-center items-center border-b-[1.5px] border-black">
-              <input
-                type="text"
-                placeholder="Search in Ladily"
-                class="placeholder:font-cormorant placeholder:font-semibold border-none outline-0 ring-0 w-full xl:pb-[1px] lg:pb-[3px]"
-              />
+              <input type="text" placeholder="Search in Ladily"
+                class="placeholder:font-cormorant placeholder:font-semibold border-none outline-0 ring-0 w-full xl:pb-[1px] lg:pb-[3px]" />
               <button>
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 10-14 0 7 7 0 0014 0z"></path></svg>
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M21 21l-6-6m2-5a7 7 0 10-14 0 7 7 0 0014 0z"></path>
+                </svg>
               </button>
             </div>
           </div>
           <button class="pl-4">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 18.364A4 4 0 014 15V9a7 7 0 017-7h2a7 7 0 017 7v6a4 4 0 01-.879 2.364M15 21H9m0 0a3 3 0 01-6 0m18 0a3 3 0 01-6 0"></path></svg>
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M5.121 18.364A4 4 0 014 15V9a7 7 0 017-7h2a7 7 0 017 7v6a4 4 0 01-.879 2.364M15 21H9m0 0a3 3 0 01-6 0m18 0a3 3 0 01-6 0">
+              </path>
+            </svg>
           </button>
           <button class="flex !pl-4">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16s1.5 2 8 2 8-2 8-2M9 18l2 2 4-4m-6 0h6"></path></svg>
-            <div class="w-[16px] h-[16px] text-[10px] text-white bg-[#543310] flex justify-center items-center -mt-1 -ml-2 rounded-full">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 16s1.5 2 8 2 8-2 8-2M9 18l2 2 4-4m-6 0h6"></path>
+            </svg>
+            <div
+              class="w-[16px] h-[16px] text-[10px] text-white bg-[#543310] flex justify-center items-center -mt-1 -ml-2 rounded-full">
               <p>0</p>
             </div>
           </button>
           <button class="flex !pl-4 dropdown-parent relative">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h18M6 3l2 12m0 0h8m-8 0a2 2 0 104 0m4 0a2 2 0 104 0M5 21h14"></path></svg>
-            <div class="w-[16px] h-[16px] text-[10px] text-white bg-[#543310] flex justify-center items-center -mt-1 -ml-2 rounded-full">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M3 3h18M6 3l2 12m0 0h8m-8 0a2 2 0 104 0m4 0a2 2 0 104 0M5 21h14"></path>
+            </svg>
+            <div
+              class="w-[16px] h-[16px] text-[10px] text-white bg-[#543310] flex justify-center items-center -mt-1 -ml-2 rounded-full">
               <p>0</p>
             </div>
             <!-- Cart Dropdown -->
-            <div class="absolute top-6 dropdown-info right-1 shadow-md bg-white w-[580px] h-[300px] p-10 transition-colors duration-500 border-[0.5px] border-[#d4d4d4]">
+            <div
+              class="absolute top-6 dropdown-info right-1 shadow-md bg-white w-[580px] h-[300px] p-10 transition-colors duration-500 border-[0.5px] border-[#d4d4d4]">
               <div class="flex justify-between items-center text-[#543310] border-b border-[#d4d4d4] pb-7">
                 <h2 class="text-3xl font-cormorant font-bold">Your Cart</h2>
                 <p class="text-3xl font-bold">(0)</p>
@@ -76,10 +96,14 @@
       <div class="dropdown-parent relative h-full mt-[33px] cursor-pointer">
         <nav class="flex justify-center items-center gap-2">
           <li class="font-cormorant text-xl font-semibold list-none">Face</li>
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+          </svg>
         </nav>
         <div class="dropdown-info w-[272px] bg-white absolute top-[46px] left-0 shadow-md">
-          <h2 class="text-[#543310] text-lg font-cormorant py-3 pl-5 hover:text-white hover:bg-[#543310] font-semibold border-b-[1.5px] border-[#543310]">Cleanser</h2>
+          <h2
+            class="text-[#543310] text-lg font-cormorant py-3 pl-5 hover:text-white hover:bg-[#543310] font-semibold border-b-[1.5px] border-[#543310]">
+            Cleanser</h2>
           <!-- Add more dropdown items as needed -->
         </div>
       </div>
@@ -87,6 +111,44 @@
     </div>
   </div>
 
+
+  <body class="bg-[#f9f6f1]">
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide h-[370px] w-full bgImgSlider bg-[#f9f6f1]"
+          style="background-image: url('https://i.ibb.co.com/fD8gcXg/bg-slider3-1.png');">
+          <div class="absolute bottom-0 w-full h-20 bg-black opacity-50">
+            <div class="flex justify-center items-center text-white px-6 py-4">
+              <h2 class="text-lg">Stronger callgen, plumer skin</h2>
+              <p class="text-sm">This is the first slide.</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide h-[370px] w-full bgImgSlider bg-[#f9f6f1]"
+          style="background-image: url('https://i.ibb.co.com/fD8gcXg/bg-slider3-1.png');">
+          <div class="absolute bottom-0 w-full h-20 bg-black opacity-50">
+            <div class="flex justify-center items-center text-white px-6 py-4">
+              <h2 class="text-lg">Slide Two</h2>
+              <p class="text-sm">This is the second slide.</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide h-[370px] w-full bgImgSlider bg-[#f9f6f1]"
+          style="background-image: url('https://i.ibb.co.com/fD8gcXg/bg-slider3-1.png');">
+          <div class="absolute bottom-0 w-full h-20 bg-black opacity-50">
+            <div class="flex justify-center items-center text-white px-6 py-4">
+              <h2 class="text-lg">Slide Three</h2>
+              <p class="text-sm">This is the third slide.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="swiper-pagination"></div>
+    </div>
+  </body>
+
   <script src="./js/ladily.js"></script>
 </body>
+
 </html>
