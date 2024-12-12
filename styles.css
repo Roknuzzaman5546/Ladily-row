@@ -1,41 +1,15 @@
-/* Dropdown Parent Styling */
-.dropdown-parent {
-    position: relative;
-  }
-  
-  /* Dropdown Content Styling */
-  .dropdown-info {
-    display: none; /* Hidden by default */
-    position: absolute; /* Ensures it appears below the parent */
-    z-index: 10; /* Places it above other content */
-    background-color: white; /* Background for dropdown items */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition */
-    opacity: 0; /* Initial hidden state */
-    transform: translateY(-10px); /* Slide effect on show */
-  }
-  
-  /* Show the Dropdown on Hover */
-  .dropdown-parent:hover .dropdown-info {
-    display: block; /* Make dropdown visible */
-    opacity: 1; /* Fully visible */
-    transform: translateY(0); /* Reset position */
-  }
-  
-  /* Dropdown Item Styling */
-  .dropdown-info h2 {
-    padding: 10px 15px; /* Add spacing around items */
-    font-size: 1rem; /* Adjust font size */
-    font-family: 'Cormorant', serif; /* Font styling */
-    color: #543310; /* Text color */
-    border-bottom: 1.5px solid #543310; /* Border between items */
-    cursor: pointer; /* Indicates clickability */
-    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
-  }
-  
-  /* Dropdown Item Hover Effect */
-  .dropdown-info h2:hover {
-    background-color: #543310; /* Matches hover design */
-    color: white; /* Contrasting text color */
-  }
-  
+/* Initially hide the dropdown info */
+.dropdown-info {
+  display: none;
+}
+
+/* When hovering over the parent, show the dropdown info */
+.dropdown-parent:hover .dropdown-info {
+  display: block;
+}
+
+.cormorant-fourH {
+  font-family: "Cormorant", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
