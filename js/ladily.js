@@ -35,3 +35,13 @@ const swiper = new Swiper('.mySwiper', {
     clickable: true,
   },
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+  new Swiper('.mySwiper', {
+      spaceBetween: 30,
+      pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+      },
+  });
+});
